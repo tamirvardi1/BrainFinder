@@ -6,7 +6,7 @@ const FaceRegon = ({imageUrl}) => {
 	
     return (
       <div className = 'center'>
-		<img alt = '' src = {imageUrl}/>
+		<img id='inputimage' alt = '' src = {imageUrl}/>
       </div>
      
     );
