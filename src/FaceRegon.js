@@ -1,13 +1,16 @@
 import React from 'react';
-
-const FaceRegon = ({imageUrl}) => {
+import './FaceRegon.css';
+const FaceRegon = ({imageUrl,box}) => {
 
 
 	
     return (
-      <div className = 'center'>
-		<img id='inputimage' alt = '' src = {imageUrl}/>
+    <div className='center ma'>
+      <div className='absolute mt2'>
+        <img id='inputimage' alt='' src={imageUrl} width='500px' heigh='auto'/>
+        <div className='bounding-box' style={{top: box.topRow, right: box.rightCol, bottom: box.bottomRow, left: box.leftCol}}></div>
       </div>
+    </div>
      
     );
   
